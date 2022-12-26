@@ -9,7 +9,10 @@ module.exports = {
         tradingName: 'CEDENTE 002 LTDA',
         createdAt: '2020-10-29 21:22:21',
         updatedAt: '2020-10-29 21:22:22',
-        cnpjId: 2
+        city: 'Vitória',
+        state: 'ES',
+        cnpjId: 2,
+        email: 'cedente002@email.com'
       }
     ]);
 
