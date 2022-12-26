@@ -4,9 +4,13 @@ services:
 
   db:
     image: mysql
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: pensegrande
+      MYSQL_DATABASE: cashforce_v3
+    ports:
+      - 3306:3306
 
   adminer:
     image: adminer
