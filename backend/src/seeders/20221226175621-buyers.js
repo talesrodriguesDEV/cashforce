@@ -1,8 +1,9 @@
 'use strict';
 
 /** @type {import('sequelize-cli').Migration} */
+
 module.exports = {
-  async up(queryInterface, Sequelize) {
+  async up(queryInterface, _Sequelize) {
     await queryInterface.bulkInsert('buyers', [
       {
         name: 'SACADO 001',
@@ -14,10 +15,9 @@ module.exports = {
         confirm: 1
       }
     ]);
-
   },
 
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface, _Sequelize) {
     await queryInterface.bulkDelete('buyers', null, {});
   }
 };

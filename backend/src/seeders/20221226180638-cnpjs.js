@@ -1,8 +1,9 @@
 'use strict';
 
 /** @type {import('sequelize-cli').Migration} */
+
 module.exports = {
-  async up(queryInterface, Sequelize) {
+  async up(queryInterface, _Sequelize) {
     await queryInterface.bulkInsert('cnpjs', [
       {
         cnpj: '00000000000001',
@@ -17,10 +18,9 @@ module.exports = {
         updatedAt: '2020-10-29 21:20:33'
       }
     ]);
-
   },
 
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface, _Sequelize) {
     await queryInterface.bulkDelete('cnpjs', null, {});
   }
 };
