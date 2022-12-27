@@ -19,6 +19,7 @@ services:
       - 8080:8080
 
   api:
+    container_name: api-container
     build: .
     restart: always
     ports:
