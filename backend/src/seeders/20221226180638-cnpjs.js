@@ -16,6 +16,18 @@ module.exports = {
         companyType: '1',
         createdAt: '2020-10-29 21:20:33',
         updatedAt: '2020-10-29 21:20:33'
+      },
+      {
+        cnpj: '00000000000003',
+        companyType: '1',
+        createdAt: '2020-10-29 21:20:33',
+        updatedAt: '2020-10-29 21:20:33'
+      },
+      {
+        cnpj: '00000000000004',
+        companyType: '1',
+        createdAt: '2020-10-29 21:20:33',
+        updatedAt: '2020-10-29 21:20:33'
       }
     ]);
   },
